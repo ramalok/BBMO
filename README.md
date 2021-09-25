@@ -11,4 +11,8 @@ Sample_metadata.v2.tsv : contains enviromental variables. See description in htt
 
 ASV_full_table.tsv: contains OTUs (ASVs). See description in https://doi.org/10.1101/2021.03.18.435965
 
+## Core network
+
+core.network.graphml: includes the full network containing 262 nodes and 1411 edges.
+It can be easily loaded into igraph using: core.nw<-read_graph("core.network.graphml", format = c("graphml"))
 

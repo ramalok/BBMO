@@ -1,6 +1,6 @@
 # BBMO Krabberød et al.
 
-This repository contains data  from the Blanes Bay Microbial Observatory (BBMO) (http://bbmo.icm.csic.es) from the year 2004 until 2013 used in the manuscript of Krabberød et al. (https://doi.org/10.1101/2021.03.18.435965)
+This repository contains data  from the Blanes Bay Microbial Observatory (BBMO) (http://bbmo.icm.csic.es) from the year 2004 until 2013 used in the manuscript of Krabberød et al. (https://doi.org/10.1101/2021.03.18.435965). See further descriptions in this manuscript file.
 
 
 ## Raw data (fastq files)
@@ -12,7 +12,7 @@ DNA sequences are publicly available at the European Nucleotide Archive (http://
 
 ## Environmental data
 
-Sample_metadata.v2.tsv : contains enviromental variables. See description in https://doi.org/10.1101/2021.03.18.435965
+Sample_metadata.v2.tsv : contains enviromental variables. 
 
 ```R
 env.data<-read.table("Sample_metadata.v2.tsv", header=T, sep="\t")
@@ -23,7 +23,7 @@ dim(env.data) # 19 120
 
 ## Full OTU (ASV) table
 
-ASV_full_table.tsv: contains OTUs (ASVs). See description in https://doi.org/10.1101/2021.03.18.435965
+ASV_full_table.tsv: contains OTUs (ASVs).
 
 Table containing 2960 ASVs and 120 samples
 
@@ -36,7 +36,7 @@ dim(bbmo.asv.tab) # 2960  120
 
 ## Resident OTU (ASV) table
 
-ASV_residents.tsv: contains resident OTUs. See description in https://doi.org/10.1101/2021.03.18.435965
+ASV_residents.tsv: contains resident OTUs. 
 
 Table containing 709 ASVs and 120 samples
 
@@ -49,7 +49,7 @@ dim(resident.otu.table) # 709 120
 
 ## Core OTU (ASV) table
 
-ASV_core.tsv: contains core OTUs. See description in https://doi.org/10.1101/2021.03.18.435965
+ASV_core.tsv: contains core OTUs. 
 
 Table containing 259 ASVs and 120 samples
 

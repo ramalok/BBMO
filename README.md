@@ -14,5 +14,10 @@ ASV_full_table.tsv: contains OTUs (ASVs). See description in https://doi.org/10.
 ## Core network
 
 core.network.graphml: includes the full network containing 262 nodes and 1411 edges.
-It can be easily loaded into igraph using: core.nw<-read_graph("core.network.graphml", format = c("graphml"))
+It can be easily loaded into igraph using:
+
+``` R
+library(igraph)
+core.nw<-read_graph("core.network.graphml", format = c("graphml"))
+```
 

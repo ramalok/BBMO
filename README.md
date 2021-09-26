@@ -61,6 +61,22 @@ dim(core.asv) # 259 120
 
 ```
 
+## Full network
+
+full.network.graphml: includes the full network containing 603 nodes and 16971 edges.
+
+``` R
+library(igraph)
+
+full.nw<-read_graph("full.network.graphml", format = c("graphml"))
+
+length(E(full.nw)) # 16971
+length(V(full.nw)) # 603
+
+```
+
+
+
 ## Core network
 
 core.network.graphml: includes the core network containing 262 nodes and 1411 edges.
@@ -70,6 +86,10 @@ It can be easily loaded into igraph using:
 library(igraph)
 
 core.nw<-read_graph("core.network.graphml", format = c("graphml"))
+
+length(E(core.nw)) # 1411
+length(V(core.nw)) # 262
+
 ```
 
 
